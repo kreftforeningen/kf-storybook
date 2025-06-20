@@ -1,0 +1,21 @@
+import { Canvas, Meta } from "@storybook/addon-docs/blocks";
+
+import * as ColorsStories from "./Colors.stories";
+
+<Meta of={ColorsStories} />
+
+# Colors
+
+Our color palette system consists of the 6 colors from our logo symbol. In addition to black, white and a grey.
+
+Each color has its extended color palette with 11 variations from light to dark.
+
+We have also included Vipps colors into our docs, as they are much used.
+
+## Usage
+
+- Blue is our primary color.
+- Green …
+
+<Canvas of={ColorsStories.BasicColors} />
+<Canvas of={ColorsStories.ExtendedColors} />

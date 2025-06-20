@@ -1,0 +1,25 @@
+import { Canvas, Meta } from "@storybook/addon-docs/blocks";
+
+import * as FontsStories from "./Fonts.stories";
+
+<Meta of={FontsStories} />
+
+# Fonts
+
+Our design system uses IBM Plex font family with three main variants:
+
+- **Sans**: IBM Plex Sans - The primary font for body text and general content
+- **Condensed**: IBM Plex Condensed - Used for headings and titles where space is limited
+- **Serif**: IBM Plex Serif - Used for blockquotes and special content that needs emphasis
+
+## Usage
+
+Each font variant is available as a Tailwind CSS class:
+
+- `font-sans` - Default body text
+- `font-condensed` - Condensed headings
+- `font-serif` - Serif text for quotes
+
+<Canvas of={FontsStories.Sans} />
+<Canvas of={FontsStories.Condensed} />
+<Canvas of={FontsStories.Serif} />

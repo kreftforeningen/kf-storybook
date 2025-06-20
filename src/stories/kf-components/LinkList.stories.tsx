@@ -6,7 +6,7 @@ import {
   LinkListItem,
   LinkListTitle,
   LinkListDescription,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const linklistItems = [
   {
@@ -68,9 +68,9 @@ export const Default: Story = {
   ),
 };
 
-export const WithDividers: Story = {
+export const AsList: Story = {
   render: () => (
-    <LinkList className="divide-y divide-border">
+    <LinkList variant="list">
       {linklistItems.map((item) => (
         <LinkListItem key={item.id} href={item.url} className="py-4">
           <LinkListTitle>{item.title}</LinkListTitle>

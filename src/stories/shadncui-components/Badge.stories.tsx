@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
-import { Badge } from "kf-shadcnui";
+import { Badge } from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Badge",

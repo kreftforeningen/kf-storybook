@@ -8,7 +8,7 @@ import {
   InfographicItemTitleNumber,
   InfographicItemTitleText,
   InfographicItemDescription,
-} from "kf-shadcnui";
+} from "kf-component-library";
 import { HiOutlineCheckCircle } from "react-icons/hi";
 
 const infographicItems = [
@@ -53,7 +53,7 @@ const meta = {
   title: "kf-components/Infographic",
   component: Infographic,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

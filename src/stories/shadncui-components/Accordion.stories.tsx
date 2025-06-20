@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "kf-shadcnui";
+} from "kf-component-library";
 import { fn } from "storybook/test";
 
 type AccordionProps = React.ComponentProps<typeof Accordion>;

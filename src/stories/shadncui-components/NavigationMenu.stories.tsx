@@ -7,7 +7,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
   NavigationMenuLink,
-} from "kf-shadcnui";
+} from "kf-component-library";
 import { LuCircleHelp, LuCircleAlert, LuCircleCheck } from "react-icons/lu";
 
 const meta = {

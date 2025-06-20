@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 
-import { Input, Label } from "kf-shadcnui";
+import { Input, Label } from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Label",

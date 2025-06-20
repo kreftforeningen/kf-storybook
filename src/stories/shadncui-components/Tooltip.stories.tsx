@@ -5,7 +5,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "kf-shadcnui";
+} from "kf-component-library";
 import { LuInfo, LuCircleHelp, LuCircleAlert } from "react-icons/lu";
 
 const meta = {

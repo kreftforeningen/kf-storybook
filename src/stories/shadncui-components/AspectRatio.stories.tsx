@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { AspectRatio } from "kf-shadcnui";
+import { AspectRatio } from "kf-component-library";
 
 type AspectRatioProps = React.ComponentProps<typeof AspectRatio>;
 

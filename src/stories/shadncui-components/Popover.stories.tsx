@@ -1,6 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
-import { Popover, PopoverTrigger, PopoverContent, Button } from "kf-shadcnui";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  Button,
+} from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Popover",

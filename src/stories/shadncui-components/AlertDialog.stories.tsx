@@ -11,7 +11,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 type AlertDialogProps = React.ComponentProps<typeof AlertDialog>;
 

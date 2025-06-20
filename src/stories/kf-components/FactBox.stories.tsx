@@ -6,7 +6,7 @@ import {
   FactBoxTitle,
   FactBoxDescription,
   FactBoxAction,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 import "kf-tailwind/index.css";
 import "tailwindcss";
@@ -15,7 +15,7 @@ const meta = {
   title: "kf-components/FactBox",
   component: FactBox,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

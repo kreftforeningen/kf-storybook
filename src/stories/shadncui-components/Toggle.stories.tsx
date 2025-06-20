@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
-import { Toggle } from "kf-shadcnui";
+import { Toggle } from "kf-component-library";
 import { LuBold, LuItalic, LuUnderline } from "react-icons/lu";
 
 const meta = {

@@ -6,7 +6,7 @@ import {
   ContextMenuContent,
   ContextMenuItem,
   Button,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/ContextMenu",

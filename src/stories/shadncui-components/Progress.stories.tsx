@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 
-import { Progress } from "kf-shadcnui";
+import { Progress } from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Progress",

@@ -7,7 +7,7 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
   BreadcrumbPage,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Breadcrumb",

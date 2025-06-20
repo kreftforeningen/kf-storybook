@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 
-import { Textarea } from "kf-shadcnui";
+import { Textarea } from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Textarea",
   component: Textarea,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

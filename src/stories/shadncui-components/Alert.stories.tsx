@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Alert, AlertDescription, AlertTitle } from "kf-shadcnui";
+import { Alert, AlertDescription, AlertTitle } from "kf-component-library";
 import { fn } from "storybook/test";
 
 type AlertProps = React.ComponentProps<typeof Alert>;

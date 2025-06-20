@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
-import { ToggleGroup, ToggleGroupItem } from "kf-shadcnui";
+import { ToggleGroup, ToggleGroupItem } from "kf-component-library";
 import {
   LuBold,
   LuItalic,

@@ -12,7 +12,7 @@ import {
   Button,
   Label,
   Input,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Sheet",

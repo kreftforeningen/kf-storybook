@@ -7,7 +7,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Select",

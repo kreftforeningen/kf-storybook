@@ -9,7 +9,7 @@ import {
   TableHead,
   TableBody,
   TableCell,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Table",

@@ -11,7 +11,7 @@ import {
   Button,
   AspectRatio,
   Badge,
-} from "kf-shadcnui";
+} from "kf-component-library";
 import { LuArrowRight } from "react-icons/lu";
 
 const meta = {

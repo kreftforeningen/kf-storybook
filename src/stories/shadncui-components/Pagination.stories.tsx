@@ -9,7 +9,7 @@ import {
   PaginationLink,
   PaginationEllipsis,
   PaginationNext,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Pagination",

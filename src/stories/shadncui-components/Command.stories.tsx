@@ -9,7 +9,7 @@ import {
   CommandEmpty,
   CommandSeparator,
   CommandShortcut,
-} from "kf-shadcnui";
+} from "kf-component-library";
 import {
   LuCalendar,
   LuSmile,

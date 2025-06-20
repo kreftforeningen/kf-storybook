@@ -10,22 +10,34 @@ import {
   DownloadFooter,
   DownloadDownloadUrl,
   DownloadOrderUrl,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "kf-components/Download",
   component: Download,
   parameters: {
-    layout: "padded",
+    layout: "largeDesktop",
   },
   tags: ["autodocs"],
   args: { onClick: fn() },
+  decorators: [
+    (Story) => (
+      <div className="p-4">
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof Download>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    viewport: {
+      defaultViewport: "fullscreen",
+    },
+  },
   render: () => (
     <Download>
       <DownloadContent>

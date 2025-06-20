@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 
-import { Switch } from "kf-shadcnui";
+import { Switch } from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Switch",

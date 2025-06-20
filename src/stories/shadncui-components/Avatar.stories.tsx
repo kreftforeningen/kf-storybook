@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
-import { Avatar, AvatarFallback, AvatarImage } from "kf-shadcnui";
+import { Avatar, AvatarFallback, AvatarImage } from "kf-component-library";
 
 type AvatarProps = React.ComponentProps<typeof Avatar>;
 

@@ -6,7 +6,7 @@ import {
   CollapsibleTrigger,
   CollapsibleContent,
   Button,
-} from "kf-shadcnui";
+} from "kf-component-library";
 import { LuChevronsUpDown } from "react-icons/lu";
 
 const meta = {

@@ -11,7 +11,7 @@ import {
   PersonItemEmail,
   PersonItemPhone,
   PersonItemDescription,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const personItems = [
   {
@@ -73,7 +73,7 @@ const meta = {
   title: "kf-components/Person",
   component: Person,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

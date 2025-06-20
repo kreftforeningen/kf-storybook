@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
   AspectRatio,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "shadcnui-components/Carousel",

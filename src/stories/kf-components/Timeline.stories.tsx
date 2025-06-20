@@ -5,7 +5,7 @@ import {
   TimelineItem,
   TimelineItemTitle,
   TimelineItemDescription,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 import "kf-tailwind/index.css";
 import "tailwindcss";

@@ -4,13 +4,13 @@ import {
   AccentuatedLink,
   AccentuatedLinkTitle,
   AccentuatedLinkSubtitle,
-} from "kf-shadcnui";
+} from "kf-component-library";
 
 const meta = {
   title: "kf-components/AccentuatedLink",
   component: AccentuatedLink,
   parameters: {
-    layout: "centered",
+    layout: "padded",
   },
   tags: ["autodocs"],
   args: { onClick: fn() },
