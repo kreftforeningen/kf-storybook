@@ -24,14 +24,3 @@ export const WithSelectedDate: Story = {
     <Calendar {...args} selected={new Date(2024, 5, 15)} />
   ),
 };
-
-export const CustomStyling: Story = {
-  render: (args: CalendarProps) => (
-    <div className="p-4 bg-gray-50 rounded-lg">
-      <Calendar
-        {...args}
-        className="border-2 border-blue-500 rounded-lg shadow-lg"
-      />
-    </div>
-  ),
-};

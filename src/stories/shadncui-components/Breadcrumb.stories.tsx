@@ -26,41 +26,13 @@ export const Default: Story = {
         <BreadcrumbItem>
           <BreadcrumbLink href="#">Home</BreadcrumbLink>
         </BreadcrumbItem>
-        <BreadcrumbSeparator>/</BreadcrumbSeparator>
+        <BreadcrumbSeparator />
         <BreadcrumbItem>
           <BreadcrumbLink href="#">Library</BreadcrumbLink>
         </BreadcrumbItem>
-        <BreadcrumbSeparator>/</BreadcrumbSeparator>
+        <BreadcrumbSeparator />
         <BreadcrumbItem>
           <BreadcrumbPage>Data</BreadcrumbPage>
-        </BreadcrumbItem>
-      </BreadcrumbList>
-    </Breadcrumb>
-  ),
-};
-
-export const CustomStyling: Story = {
-  render: () => (
-    <Breadcrumb>
-      <BreadcrumbList className="text-lg text-blue-700">
-        <BreadcrumbItem>
-          <BreadcrumbLink href="#" className="hover:underline">
-            Home
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator className="mx-2 text-blue-400">
-          /
-        </BreadcrumbSeparator>
-        <BreadcrumbItem>
-          <BreadcrumbLink href="#" className="hover:underline">
-            Library
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator className="mx-2 text-blue-400">
-          /
-        </BreadcrumbSeparator>
-        <BreadcrumbItem>
-          <BreadcrumbPage className="font-bold">Data</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

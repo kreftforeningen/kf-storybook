@@ -8,7 +8,6 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-  Button,
   AspectRatio,
   Badge,
 } from "kf-component-library";
@@ -36,37 +35,15 @@ export const WithHeaderFooterAction: Story = {
   render: () => (
     <Card className="max-w-sm">
       <CardHeader>
+        <CardDescription>Card Description</CardDescription>
         <CardTitle>Card Title</CardTitle>
-        <CardDescription>This is a card description.</CardDescription>
         <CardAction>
           <Badge>Badge</Badge>
         </CardAction>
       </CardHeader>
       <CardContent>Here is some content inside the card.</CardContent>
       <CardFooter>
-        <Button>Action</Button>
-      </CardFooter>
-    </Card>
-  ),
-};
-
-export const CustomStyling: Story = {
-  render: () => (
-    <Card className="bg-gradient-to-br from-blue-100 to-blue-300 border-0 shadow-xl max-w-md">
-      <CardHeader>
-        <CardTitle className="text-blue-900">Custom Card</CardTitle>
-        <CardDescription className="text-blue-700">
-          With custom background and shadow
-        </CardDescription>
-        <CardAction>
-          <Badge>Badge</Badge>
-        </CardAction>
-      </CardHeader>
-      <CardContent>
-        <p>This card uses a gradient background and no border.</p>
-      </CardContent>
-      <CardFooter>
-        <Button variant="secondary">Secondary Action</Button>
+        <LuArrowRight />
       </CardFooter>
     </Card>
   ),
