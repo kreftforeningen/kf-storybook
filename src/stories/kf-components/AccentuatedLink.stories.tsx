@@ -14,6 +14,17 @@ const meta = {
   },
   tags: ["autodocs"],
   args: { onClick: fn() },
+  argTypes: {
+    href: {
+      description: "The URL that the link points to",
+      control: "text",
+      table: {
+        category: "AccentuatedLink Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+  },
 } satisfies Meta<typeof AccentuatedLink>;
 
 export default meta;

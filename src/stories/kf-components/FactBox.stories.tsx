@@ -19,6 +19,28 @@ const meta = {
   },
   tags: ["autodocs"],
   args: { onClick: fn() },
+  argTypes: {
+    expandText: {
+      description:
+        "Text displayed when content is collapsed and can be expanded",
+      control: "text",
+      table: {
+        category: "FactBoxAction Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "Expand" },
+      },
+    },
+    contractText: {
+      description:
+        "Text displayed when content is expanded and can be collapsed",
+      control: "text",
+      table: {
+        category: "FactBoxAction Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "Contract" },
+      },
+    },
+  },
 } satisfies Meta<typeof FactBox>;
 
 export default meta;
@@ -45,7 +67,7 @@ export const Default: Story = {
           </p>
         </FactBoxDescription>
       </FactBoxContent>
-      <FactBoxAction>Fact Box</FactBoxAction>
+      <FactBoxAction expandText="Expand" contractText="Contract" />
     </FactBox>
   ),
 };

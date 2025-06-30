@@ -77,6 +77,59 @@ const meta = {
   },
   tags: ["autodocs"],
   args: { onClick: fn() },
+  argTypes: {
+    // PersonItemImage props
+    src: {
+      description: "The source URL for the person's image",
+      control: "text",
+      table: {
+        category: "PersonItemImage Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+    alt: {
+      description: "Alternative text for the person's image",
+      control: "text",
+      table: {
+        category: "PersonItemImage Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+    fallback: {
+      description:
+        "Fallback text to display when image fails to load (usually initials)",
+      control: "text",
+      table: {
+        category: "PersonItemImage Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+    // PersonItemEmail props
+    hrefEmail: {
+      description:
+        "href (not hrefEmail) for the mailto URL for the person's email address",
+      control: "text",
+      table: {
+        category: "PersonItemEmail Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+    // PersonItemPhone props
+    hrefPhone: {
+      description:
+        "href (not hrefPhone) for the tel URL for the person's phone number",
+      control: "text",
+      table: {
+        category: "PersonItemPhone Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+  },
 } satisfies Meta<typeof Person>;
 
 export default meta;

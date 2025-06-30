@@ -20,6 +20,47 @@ const meta = {
   },
   tags: ["autodocs"],
   args: { onClick: fn() },
+  argTypes: {
+    // DownloadImage props
+    src: {
+      description: "The source URL for the download image",
+      control: "text",
+      table: {
+        category: "DownloadImage Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+    alt: {
+      description: "Alternative text for the download image",
+      control: "text",
+      table: {
+        category: "DownloadImage Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+    // DownloadDownloadUrl props
+    downloadHref: {
+      description: "The URL for the download link",
+      control: "text",
+      table: {
+        category: "DownloadDownloadUrl Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+    // DownloadOrderUrl props
+    orderHref: {
+      description: "The URL for the order link",
+      control: "text",
+      table: {
+        category: "DownloadOrderUrl Props",
+        type: { summary: "string" },
+        defaultValue: { summary: "undefined" },
+      },
+    },
+  },
   decorators: [
     (Story) => (
       <div className="p-4">
@@ -41,7 +82,7 @@ export const Default: Story = {
   render: () => (
     <Download>
       <DownloadContent>
-        <DownloadImage src="https://picsum.photos/200/300" />
+        <DownloadImage src="https://picsum.photos/200/300" alt="Download" />
         <DownloadMain>
           <DownloadTitle>Download</DownloadTitle>
           <DownloadDescription>
