@@ -4,6 +4,7 @@ import {
   Button,
   HeaderWrapper,
   HeaderLogo,
+  HeaderTitle,
   HeaderButton,
   HeaderMenu,
   HeaderMenuTrigger,
@@ -18,8 +19,10 @@ import {
   LuGlobe,
   LuHeart,
   LuMenu,
+  LuCog,
   LuShoppingBasket,
   LuUser,
+  LuExternalLink,
 } from "react-icons/lu";
 
 import "kf-tailwind/index.css";
@@ -117,6 +120,72 @@ export const Default: Story = {
             <HeaderMenuListItem href="#">
               <LuChevronRight />
               Aktuelt
+            </HeaderMenuListItem>
+          </HeaderMenuList>
+        </HeaderMenuContent>
+      </HeaderMenu>
+    </HeaderWrapper>
+  ),
+};
+
+export const App: Story = {
+  render: () => (
+    <HeaderWrapper>
+      <HeaderTitle>App Title by Kreftforeningen</HeaderTitle>
+      <HeaderButton
+        href="https://nettbutikk.kreftforeningen.no"
+        className="hidden sm:block"
+        variant="outline"
+      >
+        Kreftforeningen.no <LuExternalLink />
+      </HeaderButton>
+
+      <HeaderMenu>
+        <HeaderMenuTrigger>
+          <Button
+            variant="default"
+            data-slot="header-button"
+            className="flex items-center gap-2"
+          >
+            <span className="hidden sm:block">Menu</span> <LuMenu />
+          </Button>
+        </HeaderMenuTrigger>
+        <HeaderMenuContent>
+          <HeaderSearch />
+          <HeaderMenuList>
+            <HeaderMenuListItem href="#">
+              <LuUser /> Profil
+            </HeaderMenuListItem>
+            <HeaderMenuListItem href="#">
+              <LuCog /> Konto
+            </HeaderMenuListItem>
+          </HeaderMenuList>
+          <HeaderMenuList>
+            <HeaderMenuListItem href="#">
+              <LuChevronRight />
+              Personvern
+            </HeaderMenuListItem>
+            <HeaderMenuListItem href="#">
+              <LuChevronRight />
+              Avtaler
+            </HeaderMenuListItem>
+            <HeaderMenuListItem href="#">
+              <LuChevronRight />
+              Donasjoner
+            </HeaderMenuListItem>
+            <HeaderMenuListItem href="#">
+              <LuChevronRight />
+              Grupper
+            </HeaderMenuListItem>
+          </HeaderMenuList>
+          <HeaderMenuList>
+            <HeaderMenuListItem href="#">
+              <LuHeart />
+              Støtt oss
+            </HeaderMenuListItem>
+            <HeaderMenuListItem href="#">
+              <LuShoppingBasket />
+              Nettbutikk
             </HeaderMenuListItem>
           </HeaderMenuList>
         </HeaderMenuContent>
