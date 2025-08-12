@@ -7,8 +7,11 @@ import {
   BannerTitle,
   BannerDescription,
   BannerButtons,
-  Button,
+  BannerButtonPrimary,
+  BannerButtonSecondary,
 } from "kf-component-library";
+
+import bannerImage from "../assets/banner.jpg";
 
 const meta = {
   title: "kf-components/Banner",
@@ -25,11 +28,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    variant: "right",
-    color: "red",
     children: (
       <>
-        <BannerImage src="https://picsum.photos/800/800" alt="Banner" />
+        <BannerImage src={bannerImage} alt="Banner" />
         <BannerContent>
           <BannerTitle>Banner</BannerTitle>
           <BannerDescription>
@@ -45,49 +46,8 @@ export const Default: Story = {
             </p>
           </BannerDescription>
           <BannerButtons>
-            <Button className="bg-red-800">Button</Button>
-            <Button
-              className="border-red-800 bg-transparent text-red-800"
-              variant="outline"
-            >
-              Button
-            </Button>
-          </BannerButtons>
-        </BannerContent>
-      </>
-    ),
-  },
-};
-
-export const LeftVariant: Story = {
-  args: {
-    variant: "left",
-    color: "blue",
-    children: (
-      <>
-        <BannerImage src="https://picsum.photos/800/800" alt="Banner" />
-        <BannerContent>
-          <BannerTitle>Banner</BannerTitle>
-          <BannerDescription>
-            <p className="mb-4">
-              Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
-              Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
-              Text. Text.
-            </p>
-            <p className="mb-4">
-              Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
-              Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
-              Text. Text.
-            </p>
-          </BannerDescription>
-          <BannerButtons>
-            <Button className="bg-blue-800">Button</Button>
-            <Button
-              className="border-blue-800 bg-transparent text-blue-800"
-              variant="outline"
-            >
-              Button
-            </Button>
+            <BannerButtonPrimary href="#">Button</BannerButtonPrimary>
+            <BannerButtonSecondary href="#">Button</BannerButtonSecondary>
           </BannerButtons>
         </BannerContent>
       </>
@@ -98,10 +58,9 @@ export const LeftVariant: Story = {
 export const RightVariant: Story = {
   args: {
     variant: "right",
-    color: "green",
     children: (
       <>
-        <BannerImage src="https://picsum.photos/800/800" alt="Banner" />
+        <BannerImage src={bannerImage} alt="Banner" />
         <BannerContent>
           <BannerTitle>Banner</BannerTitle>
           <BannerDescription>
@@ -117,45 +76,11 @@ export const RightVariant: Story = {
             </p>
           </BannerDescription>
           <BannerButtons>
-            <Button className="bg-green-800">Button</Button>
-            <Button
-              className="border-green-800 bg-transparent text-green-800"
-              variant="outline"
-            >
-              Button
-            </Button>
+            <BannerButtonPrimary href="#">Button</BannerButtonPrimary>
+            <BannerButtonSecondary href="#">Button</BannerButtonSecondary>
           </BannerButtons>
         </BannerContent>
       </>
-    ),
-  },
-};
-
-export const WithoutImage: Story = {
-  args: {
-    variant: "right",
-    color: "red",
-    className: "h-32",
-    children: (
-      <BannerContent>
-        <BannerTitle>Banner</BannerTitle>
-        <BannerDescription>
-          <p className="mb-4">
-            Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
-            Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
-            Text. Text.
-          </p>
-        </BannerDescription>
-        <BannerButtons>
-          <Button className="bg-red-800">Button</Button>
-          <Button
-            className="border-red-800 bg-transparent text-red-800"
-            variant="outline"
-          >
-            Button
-          </Button>
-        </BannerButtons>
-      </BannerContent>
     ),
   },
 };
