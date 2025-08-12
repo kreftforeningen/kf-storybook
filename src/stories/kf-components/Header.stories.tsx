@@ -30,6 +30,7 @@ import "tailwindcss";
 
 import logo from "../assets/logo.svg";
 import logoDark from "../assets/logo-dark.svg";
+import logoSymbol from "../assets/logo-symbol.svg";
 
 const meta = {
   title: "kf-components/Header",
@@ -131,7 +132,7 @@ export const Default: Story = {
 export const App: Story = {
   render: () => (
     <HeaderWrapper>
-      <HeaderTitle>App Title by Kreftforeningen</HeaderTitle>
+      <HeaderTitle>App Title</HeaderTitle>
       <HeaderButton
         href="https://nettbutikk.kreftforeningen.no"
         className="hidden sm:block"
@@ -186,6 +187,10 @@ export const App: Story = {
             <HeaderMenuListItem href="#">
               <LuShoppingBasket />
               Nettbutikk
+            </HeaderMenuListItem>
+            <HeaderMenuListItem href="https://kreftforeningen.no/">
+              <img src={logoSymbol} alt="Kreftforeningen" className="h-6 w-6" />
+              Kreftforeningen
             </HeaderMenuListItem>
           </HeaderMenuList>
         </HeaderMenuContent>
