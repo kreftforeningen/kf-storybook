@@ -6,6 +6,8 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  CarouselDots,
+  CarouselContentWrapper,
   AspectRatio,
 } from "kf-component-library";
 
@@ -23,37 +25,40 @@ export const Default: Story = {
   render: () => (
     <div className="max-w-xl mx-auto">
       <Carousel>
-        <CarouselContent>
-          <CarouselItem>
-            <AspectRatio ratio={16 / 9}>
-              <img
-                src="https://picsum.photos/1600/900"
-                alt="Card Image"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </AspectRatio>
-          </CarouselItem>
-          <CarouselItem>
-            <AspectRatio ratio={16 / 9}>
-              <img
-                src="https://picsum.photos/1600/900"
-                alt="Card Image"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </AspectRatio>
-          </CarouselItem>
-          <CarouselItem>
-            <AspectRatio ratio={16 / 9}>
-              <img
-                src="https://picsum.photos/1600/900"
-                alt="Card Image"
-                className="object-cover w-full h-full rounded-md"
-              />
-            </AspectRatio>
-          </CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselContentWrapper>
+          <CarouselContent>
+            <CarouselItem>
+              <AspectRatio ratio={16 / 9}>
+                <img
+                  src="https://picsum.photos/1600/900"
+                  alt="Card Image"
+                  className="object-cover w-full h-full rounded-md"
+                />
+              </AspectRatio>
+            </CarouselItem>
+            <CarouselItem>
+              <AspectRatio ratio={16 / 9}>
+                <img
+                  src="https://picsum.photos/1600/900"
+                  alt="Card Image"
+                  className="object-cover w-full h-full rounded-md"
+                />
+              </AspectRatio>
+            </CarouselItem>
+            <CarouselItem>
+              <AspectRatio ratio={16 / 9}>
+                <img
+                  src="https://picsum.photos/1600/900"
+                  alt="Card Image"
+                  className="object-cover w-full h-full rounded-md"
+                />
+              </AspectRatio>
+            </CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </CarouselContentWrapper>
+        <CarouselDots />
       </Carousel>
     </div>
   ),
