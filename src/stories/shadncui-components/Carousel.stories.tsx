@@ -32,7 +32,7 @@ export const Default: Story = {
                 <img
                   src="https://picsum.photos/1600/900"
                   alt="Card Image"
-                  className="object-cover w-full h-full rounded-md"
+                  className="object-cover w-full h-full rounded-xl"
                 />
               </AspectRatio>
             </CarouselItem>
@@ -41,7 +41,7 @@ export const Default: Story = {
                 <img
                   src="https://picsum.photos/1600/900"
                   alt="Card Image"
-                  className="object-cover w-full h-full rounded-md"
+                  className="object-cover w-full h-full rounded-xl"
                 />
               </AspectRatio>
             </CarouselItem>
@@ -50,7 +50,7 @@ export const Default: Story = {
                 <img
                   src="https://picsum.photos/1600/900"
                   alt="Card Image"
-                  className="object-cover w-full h-full rounded-md"
+                  className="object-cover w-full h-full rounded-xl"
                 />
               </AspectRatio>
             </CarouselItem>
