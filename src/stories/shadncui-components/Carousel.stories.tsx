@@ -9,6 +9,7 @@ import {
   CarouselDots,
   CarouselContentWrapper,
   AspectRatio,
+  CarouselItemDescription,
 } from "kf-component-library";
 
 const meta = {
@@ -34,6 +35,9 @@ export const Default: Story = {
                   alt="Card Image"
                   className="object-cover w-full h-full rounded-xl"
                 />
+                <CarouselItemDescription>
+                  Something about the image.
+                </CarouselItemDescription>
               </AspectRatio>
             </CarouselItem>
             <CarouselItem>
@@ -52,6 +56,20 @@ export const Default: Story = {
                   alt="Card Image"
                   className="object-cover w-full h-full rounded-xl"
                 />
+                <CarouselItemDescription>
+                  Say something about the image. It should be a long text. It
+                  should be a long text. It should be a long text. It should be
+                  a long text. It should be a long text. It should be a long
+                  text. It should be a long text. It should be a long text. It
+                  should be a long text. It should be a long text. It should be
+                  a long text. It should be a long text. It should be a long
+                  text. It should be a long text. It should be a long text. It
+                  should be a long text. It should be a long text. It should be
+                  a long text. It should be a long text. It should be a long
+                  text. It should be a long text. It should be a long text. It
+                  should be a long text. It should be a long text. It should be
+                  a long text. It should be a long text.
+                </CarouselItemDescription>
               </AspectRatio>
             </CarouselItem>
           </CarouselContent>
