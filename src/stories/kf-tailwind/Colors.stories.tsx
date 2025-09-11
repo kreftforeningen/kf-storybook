@@ -3,6 +3,8 @@ import { fn } from "storybook/test";
 
 import colors from "kf-tailwind/json/basic-colors.json";
 import extendedColors from "kf-tailwind/json/extended-colors.json";
+import vippsColors from "kf-tailwind/json/vipps-colors.json";
+import pinkRibbonColors from "kf-tailwind/json/pink-ribbon-colors.json";
 
 const meta = {
   title: "kf-tailwind/Colors",
@@ -48,6 +50,70 @@ export const ExtendedColors: Story = {
       <h2>Extended Colors</h2>
       <div className="flex flex-col gap-6">
         {extendedColors.map((color) => (
+          <div key={color.name} className="flex flex-col">
+            <h3>{color.name}</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+              {Object.entries(color.values).map(([shade, value]) => (
+                <div key={shade} className="flex flex-col items-center">
+                  <div
+                    className="w-12 h-12 rounded shadow border"
+                    style={{ background: value }}
+                    title={`${color.name}-${shade}`}
+                  />
+                  <div className="mt-1 text-[10px] font-mono text-center">
+                    {shade}
+                  </div>
+                  <div className="text-[10px] font-mono text-center">
+                    {value}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  ),
+};
+
+export const PinkRibbonColors: Story = {
+  render: () => (
+    <>
+      <h2>Pink Ribbon Colors</h2>
+      <div className="flex flex-col gap-6">
+        {pinkRibbonColors.map((color) => (
+          <div key={color.name} className="flex flex-col">
+            <h3>{color.name}</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+              {Object.entries(color.values).map(([shade, value]) => (
+                <div key={shade} className="flex flex-col items-center">
+                  <div
+                    className="w-12 h-12 rounded shadow border"
+                    style={{ background: value }}
+                    title={`${color.name}-${shade}`}
+                  />
+                  <div className="mt-1 text-[10px] font-mono text-center">
+                    {shade}
+                  </div>
+                  <div className="text-[10px] font-mono text-center">
+                    {value}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  ),
+};
+
+export const VippsColors: Story = {
+  render: () => (
+    <>
+      <h2>Vipps Colors</h2>
+      <div className="flex flex-col gap-6">
+        {vippsColors.map((color) => (
           <div key={color.name} className="flex flex-col">
             <h3>{color.name}</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
