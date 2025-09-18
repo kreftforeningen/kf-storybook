@@ -7,25 +7,10 @@ const preview: Preview = {
     options: {
       storySort: {
         order: [
-          "kf-tailwind",
+          "base",
           ["Introduction", "Colors", "Fonts", "Headings", "Text"],
-          "kf-components",
-          [
-            "Introduction",
-            "AccentuatedLink",
-            "Banner",
-            "Download",
-            "FactBox",
-            "Feedback",
-            "Footer",
-            "Header",
-            "Infographic",
-            "LinkList",
-            "Person",
-            "Spinner",
-            "Timeline",
-          ],
-          "shadcnui-components",
+          "components",
+          ["Introduction", "*"],
         ],
       },
     },
