@@ -2,6 +2,10 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 import { Avatar, AvatarFallback, AvatarImage } from "kf-component-library";
 
+Avatar.displayName = "Avatar";
+AvatarFallback.displayName = "AvatarFallback";
+AvatarImage.displayName = "AvatarImage";
+
 type AvatarProps = React.ComponentProps<typeof Avatar>;
 
 const meta = {
@@ -37,8 +41,25 @@ export const WithFallback: Story = {
 };
 
 export const Group: Story = {
-  args: {
-    children: "Avatar",
+  parameters: {
+    docs: {
+      source: {
+        code: `<div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
+  <Avatar>
+    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+    <AvatarFallback>CN</AvatarFallback>
+  </Avatar>
+  <Avatar>
+    <AvatarImage src="https://github.com/leerob.png" alt="@leerob" />
+    <AvatarFallback>LR</AvatarFallback>
+  </Avatar>
+  <Avatar>
+    <AvatarImage src="https://github.com/evilrabbit.png" alt="@evilrabbit" />
+    <AvatarFallback>ER</AvatarFallback>
+  </Avatar>
+</div>`,
+      },
+    },
   },
   render: () => (
     <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
