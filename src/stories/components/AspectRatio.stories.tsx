@@ -2,6 +2,8 @@ import * as React from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { AspectRatio } from "kf-component-library";
 
+AspectRatio.displayName = "AspectRatio";
+
 type AspectRatioProps = React.ComponentProps<typeof AspectRatio>;
 
 const meta = {
