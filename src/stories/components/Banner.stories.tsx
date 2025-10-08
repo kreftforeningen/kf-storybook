@@ -27,6 +27,34 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Banner>
+  <BannerImage src={bannerImage} alt="Banner" />
+  <BannerContent>
+    <BannerTitle>Banner</BannerTitle>
+    <BannerDescription>
+      <p className="mb-4">
+        Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
+        Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
+        Text. Text.
+      </p>
+      <p className="mb-4">
+        Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
+        Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
+        Text. Text.
+      </p>
+    </BannerDescription>
+    <BannerButtons>
+      <BannerButtonPrimary href="#">Button</BannerButtonPrimary>
+      <BannerButtonSecondary href="#">Button</BannerButtonSecondary>
+    </BannerButtons>
+  </BannerContent>
+</Banner>`,
+      },
+    },
+  },
   args: {
     children: (
       <>
@@ -56,6 +84,34 @@ export const Default: Story = {
 };
 
 export const RightVariant: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Banner variant="right">
+  <BannerImage src={bannerImage} alt="Banner" />
+  <BannerContent>
+    <BannerTitle>Banner</BannerTitle>
+    <BannerDescription>
+      <p className="mb-4">
+        Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
+        Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
+        Text. Text.
+      </p>
+      <p className="mb-4">
+        Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
+        Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text.
+        Text. Text.
+      </p>
+    </BannerDescription>
+    <BannerButtons>
+      <BannerButtonPrimary href="#">Button</BannerButtonPrimary>
+      <BannerButtonSecondary href="#">Button</BannerButtonSecondary>
+    </BannerButtons>
+  </BannerContent>
+</Banner>`,
+      },
+    },
+  },
   args: {
     variant: "right",
     children: (
