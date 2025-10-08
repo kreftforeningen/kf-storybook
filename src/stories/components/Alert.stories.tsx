@@ -2,6 +2,10 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Alert, AlertDescription, AlertTitle } from "kf-component-library";
 import { fn } from "storybook/test";
 
+Alert.displayName = "Alert";
+AlertDescription.displayName = "AlertDescription";
+AlertTitle.displayName = "AlertTitle";
+
 type AlertProps = React.ComponentProps<typeof Alert>;
 
 const meta = {
@@ -43,20 +47,6 @@ export const Destructive: Story = {
       <AlertTitle>Error</AlertTitle>
       <AlertDescription>
         Your session has expired. Please log in again.
-      </AlertDescription>
-    </Alert>
-  ),
-};
-
-export const WithCustomStyling: Story = {
-  args: {
-    variant: "default",
-  },
-  render: (args: AlertProps) => (
-    <Alert {...args} className="bg-blue-50 border-blue-200">
-      <AlertTitle className="text-blue-800">Information</AlertTitle>
-      <AlertDescription className="text-blue-600">
-        This is a custom styled alert with blue colors.
       </AlertDescription>
     </Alert>
   ),
