@@ -8,6 +8,11 @@ import {
 } from "kf-component-library";
 import { fn } from "storybook/test";
 
+Accordion.displayName = "Accordion";
+AccordionContent.displayName = "AccordionContent";
+AccordionItem.displayName = "AccordionItem";
+AccordionTrigger.displayName = "AccordionTrigger";
+
 type AccordionProps = React.ComponentProps<typeof Accordion>;
 
 const meta = {
