@@ -14,14 +14,37 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<ModeToggle />`,
+      },
+    },
+  },
   render: () => <ModeToggle />,
 };
 
 export const WithCustomProps: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<ModeToggle align="start" variant="outline" size="default" />`,
+      },
+    },
+  },
   render: () => <ModeToggle align="start" variant="outline" size="default" />,
 };
 
 export const WithCustomText: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<ModeToggle align="start" variant="outline" size="default">
+  Custom Toggle Text
+</ModeToggle>`,
+      },
+    },
+  },
   render: () => (
     <ModeToggle align="start" variant="outline" size="default">
       Custom Toggle Text

@@ -15,10 +15,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Separator</h2>
-      <Separator />
-    </div>
-  ),
+  parameters: {
+    docs: {
+      source: {
+        code: `<Separator />`,
+      },
+    },
+  },
+  render: () => <Separator />,
 };

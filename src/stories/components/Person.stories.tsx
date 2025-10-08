@@ -137,6 +137,36 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Person>
+  {personItems.map((item) => (
+    <PersonItem key={item.id}>
+      <PersonItemImage
+        src={item.image}
+        alt={\`\${item.firstName} \${item.lastName}\`}
+        fallback={\`\${item.firstName.charAt(0)}\${item.lastName.charAt(0)}\`}
+      />
+      <PersonItemContent>
+        <PersonItemName>
+          {item.firstName} {item.lastName}
+        </PersonItemName>
+        <PersonItemTitle>{item.title}</PersonItemTitle>
+        <PersonItemEmail href={\`mailto:\${item.email}\`}>
+          {item.email}
+        </PersonItemEmail>
+        <PersonItemPhone href={\`tel:\${item.phone}\`}>
+          {item.phone}
+        </PersonItemPhone>
+        <PersonItemDescription>{item.description}</PersonItemDescription>
+      </PersonItemContent>
+    </PersonItem>
+  ))}
+</Person>`,
+      },
+    },
+  },
   render: () => (
     <Person>
       {personItems.map((item) => (
@@ -157,31 +187,6 @@ export const Default: Story = {
             <PersonItemPhone href={`tel:${item.phone}`}>
               {item.phone}
             </PersonItemPhone>
-            <PersonItemDescription>{item.description}</PersonItemDescription>
-          </PersonItemContent>
-        </PersonItem>
-      ))}
-    </Person>
-  ),
-};
-
-export const WithDisabledState: Story = {
-  render: () => (
-    <Person className="opacity-50">
-      {personItems.map((item) => (
-        <PersonItem key={item.id} className="pointer-events-none">
-          <PersonItemImage
-            src={item.image}
-            alt={`${item.firstName} ${item.lastName}`}
-            fallback={`${item.firstName.charAt(0)}${item.lastName.charAt(0)}`}
-          />
-          <PersonItemContent>
-            <PersonItemName>
-              {item.firstName} {item.lastName}
-            </PersonItemName>
-            <PersonItemTitle>{item.title}</PersonItemTitle>
-            <PersonItemEmail href="#">{item.email}</PersonItemEmail>
-            <PersonItemPhone href="#">{item.phone}</PersonItemPhone>
             <PersonItemDescription>{item.description}</PersonItemDescription>
           </PersonItemContent>
         </PersonItem>

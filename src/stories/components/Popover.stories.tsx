@@ -19,15 +19,24 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Popover>
+  <PopoverTrigger asChild>
+    <Button variant="outline">Open Popover</Button>
+  </PopoverTrigger>
+  <PopoverContent>Place content for the popover here.</PopoverContent>
+</Popover>`,
+      },
+    },
+  },
   render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Popover</h2>
-      <Popover>
-        <PopoverTrigger>
-          <Button variant="outline">Open Popover</Button>
-        </PopoverTrigger>
-        <PopoverContent>Place content for the popover here.</PopoverContent>
-      </Popover>
-    </div>
+    <Popover>
+      <PopoverTrigger asChild>
+        <Button variant="outline">Open Popover</Button>
+      </PopoverTrigger>
+      <PopoverContent>Place content for the popover here.</PopoverContent>
+    </Popover>
   ),
 };

@@ -21,31 +21,56 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<HoverCard>
+  <HoverCardTrigger asChild>
+    <Button variant="outline">Hover this button</Button>
+  </HoverCardTrigger>
+  <HoverCardContent className="w-80">
+    <div className="flex justify-between gap-4">
+      <Avatar>
+        <AvatarImage src="https://github.com/vercel.png" />
+        <AvatarFallback>VC</AvatarFallback>
+      </Avatar>
+      <div className="space-y-1">
+        <h4 className="text-sm font-semibold">@nextjs</h4>
+        <p className="text-sm">
+          The React Framework – created and maintained by @vercel.
+        </p>
+        <div className="text-muted-foreground text-xs">
+          Joined December 2021
+        </div>
+      </div>
+    </div>
+  </HoverCardContent>
+</HoverCard>`,
+      },
+    },
+  },
   render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Hover Card</h2>
-      <HoverCard>
-        <HoverCardTrigger asChild>
-          <Button variant="link">@nextjs</Button>
-        </HoverCardTrigger>
-        <HoverCardContent className="w-80">
-          <div className="flex justify-between gap-4">
-            <Avatar>
-              <AvatarImage src="https://github.com/vercel.png" />
-              <AvatarFallback>VC</AvatarFallback>
-            </Avatar>
-            <div className="space-y-1">
-              <h4 className="text-sm font-semibold">@nextjs</h4>
-              <p className="text-sm">
-                The React Framework – created and maintained by @vercel.
-              </p>
-              <div className="text-muted-foreground text-xs">
-                Joined December 2021
-              </div>
+    <HoverCard>
+      <HoverCardTrigger asChild>
+        <Button variant="outline">Hover this button</Button>
+      </HoverCardTrigger>
+      <HoverCardContent className="w-80">
+        <div className="flex justify-between gap-4">
+          <Avatar>
+            <AvatarImage src="https://github.com/vercel.png" />
+            <AvatarFallback>VC</AvatarFallback>
+          </Avatar>
+          <div className="space-y-1">
+            <h4 className="text-sm font-semibold">@nextjs</h4>
+            <p className="text-sm">
+              The React Framework – created and maintained by @vercel.
+            </p>
+            <div className="text-muted-foreground text-xs">
+              Joined December 2021
             </div>
           </div>
-        </HoverCardContent>
-      </HoverCard>
-    </div>
+        </div>
+      </HoverCardContent>
+    </HoverCard>
   ),
 };

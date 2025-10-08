@@ -55,29 +55,3 @@ export const Default: Story = {
     href: "https://www.example.com",
   },
 };
-
-export const WithDisabledState: Story = {
-  parameters: {
-    docs: {
-      source: {
-        code: `<AccentuatedLink
-  href="https://www.example.com"
-  className="opacity-50 cursor-not-allowed pointer-events-none"
->
-  <AccentuatedLinkSubtitle>Coming Soon</AccentuatedLinkSubtitle>
-  <AccentuatedLinkTitle>Feature Not Available</AccentuatedLinkTitle>
-</AccentuatedLink>`,
-      },
-    },
-  },
-  render: (args: typeof meta.args) => (
-    <AccentuatedLink {...args}>
-      <AccentuatedLinkSubtitle>Coming Soon</AccentuatedLinkSubtitle>
-      <AccentuatedLinkTitle>Feature Not Available</AccentuatedLinkTitle>
-    </AccentuatedLink>
-  ),
-  args: {
-    href: "https://www.example.com",
-    className: "opacity-50 cursor-not-allowed pointer-events-none",
-  },
-};

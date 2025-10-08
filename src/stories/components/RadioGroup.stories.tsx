@@ -14,19 +14,32 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<RadioGroup defaultValue="option-one">
+  <div className="flex items-center space-x-2">
+    <RadioGroupItem value="option-one" id="option-one" />
+    <Label htmlFor="option-one">Option One</Label>
+  </div>
+  <div className="flex items-center space-x-2">
+    <RadioGroupItem value="option-two" id="option-two" />
+    <Label htmlFor="option-two">Option Two</Label>
+  </div>
+</RadioGroup>`,
+      },
+    },
+  },
   render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Radio Group</h2>
-      <RadioGroup defaultValue="option-one">
-        <div className="flex items-center space-x-2">
-          <RadioGroupItem value="option-one" id="option-one" />
-          <Label htmlFor="option-one">Option One</Label>
-        </div>
-        <div className="flex items-center space-x-2">
-          <RadioGroupItem value="option-two" id="option-two" />
-          <Label htmlFor="option-two">Option Two</Label>
-        </div>
-      </RadioGroup>
-    </div>
+    <RadioGroup defaultValue="option-one">
+      <div className="flex items-center space-x-2">
+        <RadioGroupItem value="option-one" id="option-one" />
+        <Label htmlFor="option-one">Option One</Label>
+      </div>
+      <div className="flex items-center space-x-2">
+        <RadioGroupItem value="option-two" id="option-two" />
+        <Label htmlFor="option-two">Option Two</Label>
+      </div>
+    </RadioGroup>
   ),
 };

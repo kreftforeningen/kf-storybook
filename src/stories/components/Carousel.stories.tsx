@@ -23,6 +23,67 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<div className="max-w-xl mx-auto">
+  <Carousel>
+    <CarouselContentWrapper>
+      <CarouselContent>
+        <CarouselItem>
+          <AspectRatio ratio={16 / 9}>
+            <img
+              src="https://picsum.photos/1600/900"
+              alt="Card Image"
+              className="object-cover w-full h-full rounded-xl"
+            />
+            <CarouselItemDescription>
+              Something about the image.
+            </CarouselItemDescription>
+          </AspectRatio>
+        </CarouselItem>
+        <CarouselItem>
+          <AspectRatio ratio={16 / 9}>
+            <img
+              src="https://picsum.photos/1600/900"
+              alt="Card Image"
+              className="object-cover w-full h-full rounded-xl"
+            />
+          </AspectRatio>
+        </CarouselItem>
+        <CarouselItem>
+          <AspectRatio ratio={16 / 9}>
+            <img
+              src="https://picsum.photos/1600/900"
+              alt="Card Image"
+              className="object-cover w-full h-full rounded-xl"
+            />
+            <CarouselItemDescription>
+              Say something about the image. It should be a long text. It
+              should be a long text. It should be a long text. It should be
+              a long text. It should be a long text. It should be a long
+              text. It should be a long text. It should be a long text. It
+              should be a long text. It should be a long text. It should be
+              a long text. It should be a long text. It should be a long
+              text. It should be a long text. It should be a long text. It
+              should be a long text. It should be a long text. It should be
+              a long text. It should be a long text. It should be a long
+              text. It should be a long text. It should be a long text. It
+              should be a long text. It should be a long text. It should be
+              a long text. It should be a long text.
+            </CarouselItemDescription>
+          </AspectRatio>
+        </CarouselItem>
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </CarouselContentWrapper>
+    <CarouselDots />
+  </Carousel>
+</div>`,
+      },
+    },
+  },
   render: () => (
     <div className="max-w-xl mx-auto">
       <Carousel>

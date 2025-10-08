@@ -52,6 +52,20 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Timeline>
+  {timelineItems.map((item, index) => (
+    <TimelineItem key={item.id} isLast={index === timelineItems.length - 1}>
+      <TimelineItemTitle>{item.title}</TimelineItemTitle>
+      <TimelineItemDescription>{item.content}</TimelineItemDescription>
+    </TimelineItem>
+  ))}
+</Timeline>`,
+      },
+    },
+  },
   render: () => (
     <Timeline>
       {timelineItems.map((item, index) => (
@@ -65,6 +79,24 @@ export const Default: Story = {
 };
 
 export const WithDisabledState: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Timeline className="opacity-50">
+  {timelineItems.map((item, index) => (
+    <TimelineItem
+      key={item.id}
+      isLast={index === timelineItems.length - 1}
+      className="pointer-events-none"
+    >
+      <TimelineItemTitle>{item.title}</TimelineItemTitle>
+      <TimelineItemDescription>{item.content}</TimelineItemDescription>
+    </TimelineItem>
+  ))}
+</Timeline>`,
+      },
+    },
+  },
   render: () => (
     <Timeline className="opacity-50">
       {timelineItems.map((item, index) => (

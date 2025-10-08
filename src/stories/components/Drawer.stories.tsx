@@ -23,31 +23,56 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Drawer>
+    <DrawerTrigger asChild>
+      <Button variant="outline">Click to open Drawer</Button>
+    </DrawerTrigger>
+    <DrawerContent>
+      <div className="mx-auto w-full max-w-sm">
+        <DrawerHeader>
+          <DrawerTitle>Drawer</DrawerTitle>
+          <DrawerDescription>Achieve your goals.</DrawerDescription>
+        </DrawerHeader>
+        <div className="p-4 pb-0 text-center">
+          Some content in this drawer.
+        </div>
+        <DrawerFooter>
+          <Button>Submit</Button>
+          <DrawerClose asChild>
+            <Button variant="outline">Cancel</Button>
+          </DrawerClose>
+        </DrawerFooter>
+      </div>
+    </DrawerContent>
+  </Drawer>`,
+      },
+    },
+  },
   render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Drawer</h2>
-      <Drawer>
-        <DrawerTrigger asChild>
-          <Button variant="outline">Open Drawer</Button>
-        </DrawerTrigger>
-        <DrawerContent>
-          <div className="mx-auto w-full max-w-sm">
-            <DrawerHeader>
-              <DrawerTitle>Drawer</DrawerTitle>
-              <DrawerDescription>Achieve your goals.</DrawerDescription>
-            </DrawerHeader>
-            <div className="p-4 pb-0 text-center">
-              Some content in this drawer.
-            </div>
-            <DrawerFooter>
-              <Button>Submit</Button>
-              <DrawerClose asChild>
-                <Button variant="outline">Cancel</Button>
-              </DrawerClose>
-            </DrawerFooter>
+    <Drawer>
+      <DrawerTrigger asChild>
+        <Button variant="outline">Click to open Drawer</Button>
+      </DrawerTrigger>
+      <DrawerContent>
+        <div className="mx-auto w-full max-w-sm">
+          <DrawerHeader>
+            <DrawerTitle>Drawer</DrawerTitle>
+            <DrawerDescription>Achieve your goals.</DrawerDescription>
+          </DrawerHeader>
+          <div className="p-4 pb-0 text-center">
+            Some content in this drawer.
           </div>
-        </DrawerContent>
-      </Drawer>
-    </div>
+          <DrawerFooter>
+            <Button>Submit</Button>
+            <DrawerClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </DrawerClose>
+          </DrawerFooter>
+        </div>
+      </DrawerContent>
+    </Drawer>
   ),
 };

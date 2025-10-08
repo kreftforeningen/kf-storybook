@@ -27,6 +27,11 @@ export const Default: Story = {
     viewport: {
       defaultViewport: "fullscreen",
     },
+    docs: {
+      source: {
+        code: `<Spinner>Loading from the server …</Spinner>`,
+      },
+    },
   },
   render: () => <Spinner>Loading from the server …</Spinner>,
 };

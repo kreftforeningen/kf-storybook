@@ -19,9 +19,27 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<div>
+  <ContextMenu>
+    <ContextMenuTrigger asChild>
+      <Button variant="outline">Right click to show menu</Button>
+    </ContextMenuTrigger>
+    <ContextMenuContent>
+      <ContextMenuItem>Profile</ContextMenuItem>
+      <ContextMenuItem>Billing</ContextMenuItem>
+      <ContextMenuItem>Team</ContextMenuItem>
+      <ContextMenuItem>Subscription</ContextMenuItem>
+    </ContextMenuContent>
+  </ContextMenu>
+</div>`,
+      },
+    },
+  },
   render: () => (
     <div>
-      <h2 className="text-xl font-bold mb-4">ContextMenu</h2>
       <ContextMenu>
         <ContextMenuTrigger asChild>
           <Button variant="outline">Right click to show menu</Button>

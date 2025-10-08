@@ -13,9 +13,27 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<>
+  <Button
+    variant="outline"
+    onClick={() =>
+      toast.warning("Event has been created", {
+        description: "Sunday, December 03, 2023 at 9:00 AM",
+      })
+    }
+  >
+    Click to show Toast
+  </Button>
+  <Toaster position="top-center" richColors closeButton />
+</>`,
+      },
+    },
+  },
   render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Sonner</h2>
+    <>
       <Button
         variant="outline"
         onClick={() =>
@@ -24,9 +42,9 @@ export const Default: Story = {
           })
         }
       >
-        Show Toast
+        Click to show Toast
       </Button>
       <Toaster position="top-center" richColors closeButton />
-    </div>
+    </>
   ),
 };

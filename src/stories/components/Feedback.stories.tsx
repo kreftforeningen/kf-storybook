@@ -39,56 +39,104 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `
+  <Feedback>
+    <FeedbackHeader>
+      <FeedbackTitle>We value your feedback</FeedbackTitle>
+      <FeedbackDescription>
+        Please let us know if our service met your expectations.
+      </FeedbackDescription>
+    </FeedbackHeader>
+    <FeedbackContent>
+      <FeedbackButtons>
+        <FeedbackButtonPositive />
+        <FeedbackButtonNegative />
+      </FeedbackButtons>
+      <FeedbackComment>
+        <FeedbackCommentInput>Feedback</FeedbackCommentInput>
+        <FeedbackSubmit>Submit Feedback</FeedbackSubmit>
+      </FeedbackComment>
+    </FeedbackContent>
+  </Feedback>
+`,
+      },
+    },
+  },
   render: () => (
-    <>
-      <h2>Default</h2>
-      <Feedback>
-        <FeedbackHeader>
-          <FeedbackTitle>We value your feedback</FeedbackTitle>
-          <FeedbackDescription>
-            Please let us know if our service met your expectations.
-          </FeedbackDescription>
-        </FeedbackHeader>
-        <FeedbackContent>
-          <FeedbackButtons>
-            <FeedbackButtonPositive />
-            <FeedbackButtonNegative />
-          </FeedbackButtons>
-          <FeedbackComment>
-            <FeedbackCommentInput>Feedback</FeedbackCommentInput>
-            <FeedbackSubmit>Submit Feedback</FeedbackSubmit>
-          </FeedbackComment>
-        </FeedbackContent>
-      </Feedback>
-    </>
+    <Feedback>
+      <FeedbackHeader>
+        <FeedbackTitle>We value your feedback</FeedbackTitle>
+        <FeedbackDescription>
+          Please let us know if our service met your expectations.
+        </FeedbackDescription>
+      </FeedbackHeader>
+      <FeedbackContent>
+        <FeedbackButtons>
+          <FeedbackButtonPositive />
+          <FeedbackButtonNegative />
+        </FeedbackButtons>
+        <FeedbackComment>
+          <FeedbackCommentInput>Feedback</FeedbackCommentInput>
+          <FeedbackSubmit>Submit Feedback</FeedbackSubmit>
+        </FeedbackComment>
+      </FeedbackContent>
+    </Feedback>
   ),
 };
 
 export const Custom: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `
+  <Feedback>
+    <FeedbackHeader>
+      <FeedbackTitle>Tell us what you think</FeedbackTitle>
+      <FeedbackDescription>
+        We would love to hear your thoughts.
+      </FeedbackDescription>
+    </FeedbackHeader>
+    <FeedbackContent>
+      <FeedbackButtons>
+        <FeedbackButtonPositive>Very good</FeedbackButtonPositive>
+        <FeedbackButtonNegative>Very bad</FeedbackButtonNegative>
+      </FeedbackButtons>
+      <FeedbackComment>
+        <FeedbackCommentInput
+          label="Your comment"
+          placeholder="Tell us what you think"
+        />
+        <FeedbackSubmit>Hit it</FeedbackSubmit>
+      </FeedbackComment>
+    </FeedbackContent>
+  </Feedback>`,
+      },
+    },
+  },
   render: () => (
-    <>
-      <h2>Custom</h2>
-      <Feedback>
-        <FeedbackHeader>
-          <FeedbackTitle>Tell us what you think</FeedbackTitle>
-          <FeedbackDescription>
-            We would love to hear your thoughts.
-          </FeedbackDescription>
-        </FeedbackHeader>
-        <FeedbackContent>
-          <FeedbackButtons>
-            <FeedbackButtonPositive>Very good</FeedbackButtonPositive>
-            <FeedbackButtonNegative>Very bad</FeedbackButtonNegative>
-          </FeedbackButtons>
-          <FeedbackComment>
-            <FeedbackCommentInput
-              label="Your comment"
-              placeholder="Tell us what you think"
-            />
-            <FeedbackSubmit>Hit it</FeedbackSubmit>
-          </FeedbackComment>
-        </FeedbackContent>
-      </Feedback>
-    </>
+    <Feedback>
+      <FeedbackHeader>
+        <FeedbackTitle>Tell us what you think</FeedbackTitle>
+        <FeedbackDescription>
+          We would love to hear your thoughts.
+        </FeedbackDescription>
+      </FeedbackHeader>
+      <FeedbackContent>
+        <FeedbackButtons>
+          <FeedbackButtonPositive>Very good</FeedbackButtonPositive>
+          <FeedbackButtonNegative>Very bad</FeedbackButtonNegative>
+        </FeedbackButtons>
+        <FeedbackComment>
+          <FeedbackCommentInput
+            label="Your comment"
+            placeholder="Tell us what you think"
+          />
+          <FeedbackSubmit>Hit it</FeedbackSubmit>
+        </FeedbackComment>
+      </FeedbackContent>
+    </Feedback>
   ),
 };

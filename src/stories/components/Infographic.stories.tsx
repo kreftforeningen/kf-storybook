@@ -33,20 +33,6 @@ const infographicItems = [
     description: "Begin coding the main features.",
     url: "https://www.altavista.com",
   },
-  {
-    id: 4,
-    titleNumber: "4",
-    titleText: "Testing",
-    description: "QA and bug fixing.",
-    url: "https://www.reddit.com",
-  },
-  {
-    id: 5,
-    titleNumber: "50 000",
-    titleText: "Launch",
-    description: "Release the product to users.",
-    url: "https://www.youtube.com",
-  },
 ];
 
 const meta = {
@@ -63,92 +49,36 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Infographic>
+  {infographicItems.map((item) => (
+    <InfographicItem key={item.id} color="blue">
+      <InfographicItemIcon>
+        <HiOutlineCheckCircle className="w-20 h-20" />
+      </InfographicItemIcon>
+      <InfographicItemTitle>
+        <InfographicItemTitleNumber>
+          {item.titleNumber}
+        </InfographicItemTitleNumber>
+        <InfographicItemTitleText>
+          {item.titleText}
+        </InfographicItemTitleText>
+      </InfographicItemTitle>
+      <InfographicItemDescription>
+        {item.description}
+      </InfographicItemDescription>
+    </InfographicItem>
+  ))}
+</Infographic>`,
+      },
+    },
+  },
   render: () => (
     <Infographic>
       {infographicItems.map((item) => (
         <InfographicItem key={item.id} color="blue">
-          <InfographicItemIcon>
-            <HiOutlineCheckCircle className="w-20 h-20" />
-          </InfographicItemIcon>
-          <InfographicItemTitle>
-            <InfographicItemTitleNumber>
-              {item.titleNumber}
-            </InfographicItemTitleNumber>
-            <InfographicItemTitleText>
-              {item.titleText}
-            </InfographicItemTitleText>
-          </InfographicItemTitle>
-          <InfographicItemDescription>
-            {item.description}
-          </InfographicItemDescription>
-        </InfographicItem>
-      ))}
-    </Infographic>
-  ),
-};
-
-export const WithDifferentColors: Story = {
-  render: () => (
-    <Infographic>
-      {infographicItems.map((item, index) => (
-        <InfographicItem
-          key={item.id}
-          color={["blue", "green", "red", "yellow", "purple"][index]}
-        >
-          <InfographicItemIcon>
-            <HiOutlineCheckCircle className="w-20 h-20" />
-          </InfographicItemIcon>
-          <InfographicItemTitle>
-            <InfographicItemTitleNumber>
-              {item.titleNumber}
-            </InfographicItemTitleNumber>
-            <InfographicItemTitleText>
-              {item.titleText}
-            </InfographicItemTitleText>
-          </InfographicItemTitle>
-          <InfographicItemDescription>
-            {item.description}
-          </InfographicItemDescription>
-        </InfographicItem>
-      ))}
-    </Infographic>
-  ),
-};
-
-export const WithSmallerIcons: Story = {
-  render: () => (
-    <Infographic>
-      {infographicItems.map((item) => (
-        <InfographicItem key={item.id} color="blue">
-          <InfographicItemIcon>
-            <HiOutlineCheckCircle className="w-12 h-12" />
-          </InfographicItemIcon>
-          <InfographicItemTitle>
-            <InfographicItemTitleNumber>
-              {item.titleNumber}
-            </InfographicItemTitleNumber>
-            <InfographicItemTitleText>
-              {item.titleText}
-            </InfographicItemTitleText>
-          </InfographicItemTitle>
-          <InfographicItemDescription>
-            {item.description}
-          </InfographicItemDescription>
-        </InfographicItem>
-      ))}
-    </Infographic>
-  ),
-};
-
-export const WithDisabledState: Story = {
-  render: () => (
-    <Infographic className="opacity-50">
-      {infographicItems.map((item) => (
-        <InfographicItem
-          key={item.id}
-          color="blue"
-          className="pointer-events-none"
-        >
           <InfographicItemIcon>
             <HiOutlineCheckCircle className="w-20 h-20" />
           </InfographicItemIcon>

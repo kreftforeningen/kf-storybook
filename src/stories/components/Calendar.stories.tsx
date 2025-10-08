@@ -5,6 +5,8 @@ import { Calendar } from "kf-component-library";
 
 type CalendarProps = React.ComponentProps<typeof Calendar>;
 
+Calendar.displayName = "Calendar";
+
 const meta = {
   title: "components/Calendar",
   component: Calendar,

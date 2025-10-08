@@ -56,6 +56,20 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<LinkList>
+  {linklistItems.map((item) => (
+    <LinkListItem key={item.id} href={item.url}>
+      <LinkListTitle>{item.title}</LinkListTitle>
+      <LinkListDescription>{item.content}</LinkListDescription>
+    </LinkListItem>
+  ))}
+</LinkList>`,
+      },
+    },
+  },
   render: () => (
     <LinkList>
       {linklistItems.map((item) => (
@@ -69,23 +83,24 @@ export const Default: Story = {
 };
 
 export const AsList: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<LinkList variant="list">
+  {linklistItems.map((item) => (
+    <LinkListItem key={item.id} href={item.url} className="py-4">
+      <LinkListTitle>{item.title}</LinkListTitle>
+      <LinkListDescription>{item.content}</LinkListDescription>
+    </LinkListItem>
+  ))}
+</LinkList>`,
+      },
+    },
+  },
   render: () => (
     <LinkList variant="list">
       {linklistItems.map((item) => (
         <LinkListItem key={item.id} href={item.url} className="py-4">
-          <LinkListTitle>{item.title}</LinkListTitle>
-          <LinkListDescription>{item.content}</LinkListDescription>
-        </LinkListItem>
-      ))}
-    </LinkList>
-  ),
-};
-
-export const WithDisabledState: Story = {
-  render: () => (
-    <LinkList className="opacity-50">
-      {linklistItems.map((item) => (
-        <LinkListItem key={item.id} href="#" className="pointer-events-none">
           <LinkListTitle>{item.title}</LinkListTitle>
           <LinkListDescription>{item.content}</LinkListDescription>
         </LinkListItem>

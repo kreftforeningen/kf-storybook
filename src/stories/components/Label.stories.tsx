@@ -20,6 +20,19 @@ export const Default: Story = {
 };
 
 export const WithInput: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<div>
+  <h2 className="text-xl font-bold mb-4">Input + Label</h2>
+  <div className="flex flex-row flex-wrap gap-2 items-center">
+    <Label htmlFor="label-input-demo">Input</Label>
+    <Input id="label-input-demo" />
+  </div>
+</div>`,
+      },
+    },
+  },
   render: () => (
     <div>
       <h2 className="text-xl font-bold mb-4">Input + Label</h2>

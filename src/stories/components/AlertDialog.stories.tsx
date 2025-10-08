@@ -40,7 +40,7 @@ export const Default: Story = {
   render: (args: AlertDialogProps) => (
     <AlertDialog {...args}>
       <AlertDialogTrigger asChild>
-        <Button>Open Dialog</Button>
+        <Button>Clik to open Alert Dialog</Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>

@@ -14,10 +14,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Slider</h2>
-      <Slider defaultValue={[33]} max={100} step={1} />
-    </div>
-  ),
+  parameters: {
+    docs: {
+      source: {
+        code: `<Slider defaultValue={[33]} max={100} step={1} />`,
+      },
+    },
+  },
+  render: () => <Slider defaultValue={[33]} max={100} step={1} />,
 };

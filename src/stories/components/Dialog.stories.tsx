@@ -21,23 +21,41 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Dialog>
+    <DialogTrigger asChild>
+      <Button variant="outline">Click to show dialog</Button>
+    </DialogTrigger>
+    <DialogContent>
+      <DialogHeader>
+        <DialogTitle>Are you absolutely sure?</DialogTitle>
+        <DialogDescription>
+          This action cannot be undone. This will permanently delete your
+          account and remove your data from our servers.
+        </DialogDescription>
+      </DialogHeader>
+    </DialogContent>
+  </Dialog>
+`,
+      },
+    },
+  },
   render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Dialog</h2>
-      <Dialog>
-        <DialogTrigger>
-          <Button variant="outline">Click to show dialog</Button>
-        </DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Are you absolutely sure?</DialogTitle>
-            <DialogDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
-            </DialogDescription>
-          </DialogHeader>
-        </DialogContent>
-      </Dialog>
-    </div>
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="outline">Click to show dialog</Button>
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Are you absolutely sure?</DialogTitle>
+          <DialogDescription>
+            This action cannot be undone. This will permanently delete your
+            account and remove your data from our servers.
+          </DialogDescription>
+        </DialogHeader>
+      </DialogContent>
+    </Dialog>
   ),
 };

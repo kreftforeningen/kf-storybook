@@ -3,6 +3,8 @@ import { fn } from "storybook/test";
 import { Toggle } from "kf-component-library";
 import { LuBold, LuItalic, LuUnderline } from "react-icons/lu";
 
+Toggle.displayName = "Toggle";
+
 const meta = {
   title: "components/Toggle",
   component: Toggle,
@@ -23,13 +25,6 @@ export const Default: Story = {
   },
 };
 
-export const Outline: Story = {
-  args: {
-    variant: "outline",
-    children: "Toggle",
-  },
-};
-
 export const WithIcon: Story = {
   render: () => (
     <div className="flex gap-2">
@@ -44,38 +39,4 @@ export const WithIcon: Story = {
       </Toggle>
     </div>
   ),
-};
-
-export const Disabled: Story = {
-  args: {
-    disabled: true,
-    children: "Disabled",
-  },
-};
-
-export const Pressed: Story = {
-  args: {
-    pressed: true,
-    children: "Pressed",
-  },
-};
-
-export const WithLongText: Story = {
-  args: {
-    children: "This is a toggle with longer text",
-  },
-};
-
-export const Small: Story = {
-  args: {
-    size: "sm",
-    children: "Small",
-  },
-};
-
-export const Large: Story = {
-  args: {
-    size: "lg",
-    children: "Large",
-  },
 };

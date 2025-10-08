@@ -22,25 +22,44 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<Pagination>
+  <PaginationContent>
+    <PaginationItem>
+      <PaginationPrevious href="#" />
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationLink href="#">1</PaginationLink>
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationEllipsis />
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationNext href="#" />
+    </PaginationItem>
+  </PaginationContent>
+</Pagination>`,
+      },
+    },
+  },
   render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Pagination</h2>
-      <Pagination>
-        <PaginationContent>
-          <PaginationItem>
-            <PaginationPrevious href="#" />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#">1</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationEllipsis />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationNext href="#" />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
-    </div>
+    <Pagination>
+      <PaginationContent>
+        <PaginationItem>
+          <PaginationPrevious href="#" />
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink href="#">1</PaginationLink>
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationEllipsis />
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationNext href="#" />
+        </PaginationItem>
+      </PaginationContent>
+    </Pagination>
   ),
 };

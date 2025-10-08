@@ -78,6 +78,32 @@ export const Default: Story = {
     viewport: {
       defaultViewport: "fullscreen",
     },
+    docs: {
+      source: {
+        code: `<Download>
+  <DownloadContent>
+    <DownloadImage src="https://picsum.photos/200/300" alt="Download" />
+    <DownloadMain>
+      <DownloadTitle>Download</DownloadTitle>
+      <DownloadDescription>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </DownloadDescription>
+    </DownloadMain>
+  </DownloadContent>
+  <DownloadFooter>
+    <DownloadDownloadUrl href="https://www.google.com">
+      Last ned
+    </DownloadDownloadUrl>
+    <DownloadOrderUrl href="https://www.google.com">
+      Bestill
+    </DownloadOrderUrl>
+  </DownloadFooter>
+</Download>`,
+      },
+    },
   },
   render: () => (
     <Download>
@@ -99,31 +125,6 @@ export const Default: Story = {
         </DownloadDownloadUrl>
         <DownloadOrderUrl href="https://www.google.com">
           Bestill
-        </DownloadOrderUrl>
-      </DownloadFooter>
-    </Download>
-  ),
-};
-
-export const WithDisabledState: Story = {
-  render: () => (
-    <Download className="opacity-50">
-      <DownloadContent>
-        <DownloadImage src="https://picsum.photos/200/300" />
-        <DownloadMain>
-          <DownloadTitle>Disabled State</DownloadTitle>
-          <DownloadDescription>
-            This example shows how the component looks when disabled. The links
-            are not clickable in this state.
-          </DownloadDescription>
-        </DownloadMain>
-      </DownloadContent>
-      <DownloadFooter>
-        <DownloadDownloadUrl href="#" className="pointer-events-none">
-          Download
-        </DownloadDownloadUrl>
-        <DownloadOrderUrl href="#" className="pointer-events-none">
-          Order
         </DownloadOrderUrl>
       </DownloadFooter>
     </Download>

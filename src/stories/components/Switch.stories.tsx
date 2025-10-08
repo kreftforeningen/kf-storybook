@@ -14,10 +14,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Switch</h2>
-      <Switch />
-    </div>
-  ),
+  parameters: {
+    docs: {
+      source: {
+        code: `<Switch />`,
+      },
+    },
+  },
+  render: () => <Switch />,
 };

@@ -14,10 +14,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Progress</h2>
-      <Progress value={50} />
-    </div>
-  ),
+  parameters: {
+    docs: {
+      source: {
+        code: `<Progress value={50} />`,
+      },
+    },
+  },
+  render: () => <Progress value={50} />,
 };

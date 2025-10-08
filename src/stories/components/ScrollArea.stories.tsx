@@ -30,20 +30,34 @@ const tags = [
 ];
 
 export const Default: Story = {
+  parameters: {
+    docs: {
+      source: {
+        code: `<ScrollArea className="h-72 w-48 rounded-md border">
+  <div className="p-4">
+    <h4 className="mb-4 text-base leading-none m-0">Tags</h4>
+    {tags.map((tag) => (
+      <React.Fragment key={tag}>
+        <div className="text-sm">{tag}</div>
+        <Separator className="my-2" />
+      </React.Fragment>
+    ))}
+  </div>
+</ScrollArea>`,
+      },
+    },
+  },
   render: () => (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Scroll Area</h2>
-      <ScrollArea className="h-72 w-48 rounded-md border">
-        <div className="p-4">
-          <h4 className="mb-4 text-base leading-none m-0">Tags</h4>
-          {tags.map((tag) => (
-            <React.Fragment key={tag}>
-              <div className="text-sm">{tag}</div>
-              <Separator className="my-2" />
-            </React.Fragment>
-          ))}
-        </div>
-      </ScrollArea>
-    </div>
+    <ScrollArea className="h-72 w-48 rounded-md border">
+      <div className="p-4">
+        <h4 className="mb-4 text-base leading-none m-0">Tags</h4>
+        {tags.map((tag) => (
+          <React.Fragment key={tag}>
+            <div className="text-sm">{tag}</div>
+            <Separator className="my-2" />
+          </React.Fragment>
+        ))}
+      </div>
+    </ScrollArea>
   ),
 };
