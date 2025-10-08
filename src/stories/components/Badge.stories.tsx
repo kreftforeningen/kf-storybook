@@ -2,6 +2,8 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 import { Badge } from "kf-component-library";
 
+Badge.displayName = "Badge";
+
 const meta = {
   title: "components/Badge",
   component: Badge,
@@ -44,15 +46,4 @@ export const Outline: Story = {
     children: "Outline",
     variant: "outline",
   },
-};
-
-export const AllVariants: Story = {
-  render: () => (
-    <div className="flex gap-2">
-      <Badge variant="default">Default</Badge>
-      <Badge variant="secondary">Secondary</Badge>
-      <Badge variant="destructive">Destructive</Badge>
-      <Badge variant="outline">Outline</Badge>
-    </div>
-  ),
 };
