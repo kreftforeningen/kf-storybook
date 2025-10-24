@@ -7,6 +7,13 @@ const meta = {
   title: "components/Tabs",
   component: Tabs,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A set of layered sections of content—known as tab panels—that are displayed one at a time. [Docs](https://www.radix-ui.com/docs/primitives/components/tabs). [API Reference](https://www.radix-ui.com/docs/primitives/components/tabs#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Tabs>;
 

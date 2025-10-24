@@ -7,6 +7,13 @@ const meta = {
   title: "components/ModeToggle",
   component: ModeToggle,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A mode toggle component that allows users to toggle between light and dark mode. For Vite apps.`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof ModeToggle>;
 

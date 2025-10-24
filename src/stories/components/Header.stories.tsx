@@ -37,6 +37,11 @@ const meta = {
   component: HeaderWrapper,
   parameters: {
     layout: "padded",
+    docs: {
+      description: {
+        component: `A header component that displays a header area with logo, buttons, and menu.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

@@ -15,6 +15,13 @@ const meta = {
   title: "components/Table",
   component: Table,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A responsive table component.`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Table>;
 

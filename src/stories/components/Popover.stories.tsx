@@ -11,6 +11,13 @@ const meta = {
   title: "components/Popover",
   component: Popover,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays rich content in a portal, triggered by a button. [Docs](https://www.radix-ui.com/docs/primitives/components/popover). [API Reference](https://www.radix-ui.com/docs/primitives/components/popover#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Popover>;
 

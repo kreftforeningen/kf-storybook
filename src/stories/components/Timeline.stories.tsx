@@ -43,6 +43,11 @@ const meta = {
   component: Timeline,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: `A timeline component that displays a timeline.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

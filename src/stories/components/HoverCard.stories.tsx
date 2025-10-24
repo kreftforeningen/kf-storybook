@@ -14,6 +14,13 @@ const meta = {
   title: "components/HoverCard",
   component: HoverCard,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `For sighted users to preview content available behind a link. [Docs](https://www.radix-ui.com/docs/primitives/components/hover-card). [API Reference](https://www.radix-ui.com/docs/primitives/components/hover-card#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof HoverCard>;
 

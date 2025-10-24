@@ -30,6 +30,13 @@ const meta = {
   title: "components/AlertDialog",
   component: AlertDialog,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A modal dialog that interrupts the user with important content and expects a response. [Docs](https://www.radix-ui.com/docs/primitives/components/alert-dialog). [API Reference](https://www.radix-ui.com/docs/primitives/components/alert-dialog#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof AlertDialog>;
 

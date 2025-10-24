@@ -16,6 +16,13 @@ const meta = {
   title: "components/Drawer",
   component: Drawer,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A drawer component for React. [Docs](https://vaul.emilkowal.ski/getting-started).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Drawer>;
 

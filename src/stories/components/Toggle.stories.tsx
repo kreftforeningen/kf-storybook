@@ -10,6 +10,11 @@ const meta = {
   component: Toggle,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: `A two-state button that can be either on or off. [Docs](https://www.radix-ui.com/docs/primitives/components/toggle). [API Reference](https://www.radix-ui.com/docs/primitives/components/toggle#api-reference).`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

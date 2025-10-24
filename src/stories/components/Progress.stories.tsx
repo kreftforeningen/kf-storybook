@@ -7,6 +7,13 @@ const meta = {
   title: "components/Progress",
   component: Progress,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays an indicator showing the completion progress of a task, typically displayed as a progress bar. [Docs](https://www.radix-ui.com/docs/primitives/components/progress). [API Reference](https://www.radix-ui.com/docs/primitives/components/progress#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Progress>;
 

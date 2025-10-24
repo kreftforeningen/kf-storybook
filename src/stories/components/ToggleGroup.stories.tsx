@@ -8,6 +8,11 @@ const meta = {
   component: ToggleGroup,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: `A set of two-state buttons that can be toggled on or off. [Docs](https://www.radix-ui.com/docs/primitives/components/toggle-group). [API Reference](https://www.radix-ui.com/docs/primitives/components/toggle-group#api-reference).`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

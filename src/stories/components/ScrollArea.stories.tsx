@@ -7,6 +7,13 @@ const meta = {
   title: "components/ScrollArea",
   component: ScrollArea,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Augments native scroll functionality for custom, cross-browser styling. [Docs](https://www.radix-ui.com/docs/primitives/components/scroll-area). [API Reference](https://www.radix-ui.com/docs/primitives/components/scroll-area#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof ScrollArea>;
 

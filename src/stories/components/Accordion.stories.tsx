@@ -19,6 +19,13 @@ const meta = {
   title: "components/Accordion",
   component: Accordion,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A vertically stacked set of interactive headings that each reveal a section of content.`,
+      },
+    },
+  },
   argTypes: {
     type: {
       control: "select",

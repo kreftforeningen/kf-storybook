@@ -14,6 +14,13 @@ const meta = {
       options: ["default", "secondary", "destructive", "outline"],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays a badge or a component that looks like a badge.`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Badge>;
 

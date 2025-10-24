@@ -46,6 +46,11 @@ const meta = {
   component: LinkList,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: `A list of links that can be used to navigate to different pages.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

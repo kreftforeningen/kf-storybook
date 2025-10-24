@@ -9,6 +9,11 @@ const meta = {
   component: Button,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: `Displays a button or a component that looks like a button.`,
+      },
+    },
   },
   tags: ["autodocs"],
   argTypes: {

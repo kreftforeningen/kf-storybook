@@ -39,6 +39,11 @@ const meta = {
   component: FooterWrapper,
   parameters: {
     layout: "padded",
+    docs: {
+      description: {
+        component: `A footer component that displays a footer area.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

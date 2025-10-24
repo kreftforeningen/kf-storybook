@@ -6,6 +6,13 @@ const meta = {
   title: "components/RadioGroup",
   component: RadioGroup,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time. [Docs](https://www.radix-ui.com/docs/primitives/components/radio-group). [API Reference](https://www.radix-ui.com/docs/primitives/components/radio-group#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof RadioGroup>;
 

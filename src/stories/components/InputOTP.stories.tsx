@@ -12,6 +12,13 @@ const meta = {
   title: "components/InputOTP",
   component: InputOTP,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Accessible one-time password component with copy paste functionality. [Docs](https://input-otp.rodz.dev/).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof InputOTP>;
 

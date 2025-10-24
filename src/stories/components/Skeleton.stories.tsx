@@ -7,6 +7,13 @@ const meta = {
   title: "components/Skeleton",
   component: Skeleton,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Use to show a placeholder while content is loading.`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Skeleton>;
 

@@ -12,6 +12,11 @@ const meta = {
   component: Tooltip,
   parameters: {
     layout: "centered",
+    docs: {
+      description: {
+        component: `A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it. [Docs](https://www.radix-ui.com/docs/primitives/components/tooltip). [API Reference](https://www.radix-ui.com/docs/primitives/components/tooltip#api-reference).`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

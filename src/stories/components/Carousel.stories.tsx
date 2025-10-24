@@ -16,6 +16,13 @@ const meta = {
   title: "components/Carousel",
   component: Carousel,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A carousel with motion and swipe built using Embla. [Docs](https://www.embla-carousel.com/get-started/react). [API Reference](https://www.embla-carousel.com/api).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Carousel>;
 

@@ -9,6 +9,13 @@ const meta = {
   title: "components/Checkbox",
   component: Checkbox,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A control that allows the user to toggle between checked and not checked. [Docs](https://www.radix-ui.com/docs/primitives/components/checkbox). [API Reference](https://www.radix-ui.com/docs/primitives/components/checkbox#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Checkbox>;
 

@@ -13,6 +13,13 @@ const meta = {
   title: "components/Select",
   component: Select,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays a list of options for the user to pick from—triggered by a button. [Docs](https://www.radix-ui.com/docs/primitives/components/select). [API Reference](https://www.radix-ui.com/docs/primitives/components/select#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Select>;
 

@@ -10,6 +10,13 @@ const meta = {
   title: "components/AspectRatio",
   component: AspectRatio,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays content within a desired ratio. [Docs](https://www.radix-ui.com/docs/primitives/components/aspect-ratio). [API Reference](https://www.radix-ui.com/docs/primitives/components/aspect-ratio#api-reference).`,
+      },
+    },
+  },
 } satisfies Meta<typeof AspectRatio>;
 
 export default meta;

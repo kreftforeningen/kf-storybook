@@ -12,6 +12,13 @@ const meta = {
   title: "components/Avatar",
   component: Avatar,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `An image element with a fallback for representing the user. [Docs](https://www.radix-ui.com/docs/primitives/components/avatar). [API Reference](https://www.radix-ui.com/docs/primitives/components/avatar#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Avatar>;
 

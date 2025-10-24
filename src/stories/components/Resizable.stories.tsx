@@ -10,6 +10,13 @@ const meta = {
   title: "components/Resizable",
   component: ResizablePanelGroup,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Accessible resizable panel groups and layouts with keyboard support. [Docs](https://github.com/bvaughn/react-resizable-panels). [API Reference](https://github.com/bvaughn/react-resizable-panels/tree/main/packages/react-resizable-panels).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof ResizablePanelGroup>;
 

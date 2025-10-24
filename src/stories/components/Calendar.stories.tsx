@@ -10,6 +10,13 @@ Calendar.displayName = "Calendar";
 const meta = {
   title: "components/Calendar",
   component: Calendar,
+  parameters: {
+    docs: {
+      description: {
+        component: `A date field component that allows users to enter and edit date. [Docs](https://react-day-picker.js.org/)`,
+      },
+    },
+  },
   tags: ["autodocs"],
   args: { onClick: fn() },
 } satisfies Meta<typeof Calendar>;

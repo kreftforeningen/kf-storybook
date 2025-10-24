@@ -23,6 +23,13 @@ const meta = {
   title: "components/Command",
   component: Command,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Fast, composable, unstyled command menu for React. [Docs](https://cmdk.paco.me/).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Command>;
 

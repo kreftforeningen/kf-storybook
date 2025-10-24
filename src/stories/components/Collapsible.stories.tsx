@@ -13,6 +13,13 @@ const meta = {
   title: "components/Collapsible",
   component: Collapsible,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `An interactive component which expands/collapses a panel. [Docs](https://www.radix-ui.com/docs/primitives/components/collapsible). [API Reference](https://www.radix-ui.com/docs/primitives/components/collapsible#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Collapsible>;
 

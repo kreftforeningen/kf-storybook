@@ -14,6 +14,13 @@ const meta = {
   title: "components/NavigationMenu",
   component: NavigationMenu,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A collection of links for navigating websites. [Docs](https://www.radix-ui.com/docs/primitives/components/navigation-menu). [API Reference](https://www.radix-ui.com/docs/primitives/components/navigation-menu#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof NavigationMenu>;
 

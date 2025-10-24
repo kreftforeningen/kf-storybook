@@ -18,6 +18,13 @@ const meta = {
   title: "components/Sheet",
   component: Sheet,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Extends the Dialog component to display content that complements the main content of the screen. [Docs](https://www.radix-ui.com/docs/primitives/components/dialog). [API Reference](https://www.radix-ui.com/docs/primitives/components/dialog#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Sheet>;
 

@@ -74,6 +74,11 @@ const meta = {
   component: Person,
   parameters: {
     layout: "padded",
+    docs: {
+      description: {
+        component: `A person component that displays a person with a name, title, email, phone, and description.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

@@ -40,6 +40,11 @@ const meta = {
   component: Infographic,
   parameters: {
     layout: "padded",
+    docs: {
+      description: {
+        component: `A infographic component that displays a list of items.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

@@ -16,6 +16,11 @@ const meta = {
   component: FactBox,
   parameters: {
     layout: "padded",
+    docs: {
+      description: {
+        component: `A fact box component that displays a fact. Expand and contract the content.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

@@ -11,6 +11,11 @@ const meta = {
   component: AccentuatedLink,
   parameters: {
     layout: "padded",
+    docs: {
+      description: {
+        component: `A styled link with a subtitle and title. To accentuate a link, use this component.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

@@ -12,6 +12,13 @@ const meta = {
   title: "components/Alert",
   component: Alert,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays a callout for user attention.`,
+      },
+    },
+  },
   argTypes: {
     variant: {
       control: "select",

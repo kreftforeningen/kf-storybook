@@ -7,6 +7,13 @@ const meta = {
   title: "components/Separator",
   component: Separator,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Visually or semantically separates content. [Docs](https://www.radix-ui.com/docs/primitives/components/separator). [API Reference](https://www.radix-ui.com/docs/primitives/components/separator#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Separator>;
 

@@ -13,6 +13,13 @@ import {
 const meta = {
   title: "components/DropdownMenu",
   component: DropdownMenu,
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays a menu to the user — such as a set of actions or functions — triggered by a button. [Docs](https://www.radix-ui.com/docs/primitives/components/dropdown-menu). [API Reference](https://www.radix-ui.com/docs/primitives/components/dropdown-menu#api-reference).`,
+      },
+    },
+  },
   tags: ["autodocs"],
   args: { onClick: fn() },
 } satisfies Meta<typeof DropdownMenu>;

@@ -12,6 +12,13 @@ const meta = {
   title: "components/ContextMenu",
   component: ContextMenu,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays a menu to the user — such as a set of actions or functions — triggered by a button. [Docs](https://www.radix-ui.com/docs/primitives/components/context-menu). [API Reference](https://www.radix-ui.com/docs/primitives/components/context-menu#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof ContextMenu>;
 

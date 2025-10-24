@@ -10,6 +10,11 @@ const meta = {
   component: Textarea,
   parameters: {
     layout: "padded",
+    docs: {
+      description: {
+        component: `Displays a form textarea or a component that looks like a textarea.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

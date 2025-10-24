@@ -14,6 +14,13 @@ const meta = {
   title: "components/Dialog",
   component: Dialog,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A window overlaid on either the primary window or another dialog window, rendering the content underneath inert. [Docs](https://www.radix-ui.com/docs/primitives/components/dialog). [API Reference](https://www.radix-ui.com/docs/primitives/components/dialog#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Dialog>;
 

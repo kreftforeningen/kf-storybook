@@ -7,6 +7,13 @@ const meta = {
   title: "components/Label",
   component: Label,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Renders an accessible label associated with controls. [Docs](https://www.radix-ui.com/docs/primitives/components/label). [API Reference](https://www.radix-ui.com/docs/primitives/components/label#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Label>;
 

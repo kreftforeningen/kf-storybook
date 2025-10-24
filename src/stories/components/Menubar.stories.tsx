@@ -21,6 +21,13 @@ const meta = {
   title: "components/Menubar",
   component: Menubar,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands. [Docs](https://www.radix-ui.com/docs/primitives/components/menubar). [API Reference](https://www.radix-ui.com/docs/primitives/components/menubar#api-reference).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Menubar>;
 

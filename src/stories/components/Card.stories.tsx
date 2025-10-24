@@ -17,6 +17,13 @@ const meta = {
   title: "components/Card",
   component: Card,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays a card with header, content, and footer.`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Card>;
 

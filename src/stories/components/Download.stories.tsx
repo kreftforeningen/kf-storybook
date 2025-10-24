@@ -17,6 +17,11 @@ const meta = {
   component: Download,
   parameters: {
     layout: "largeDesktop",
+    docs: {
+      description: {
+        component: `A download component that allows users to download a file.`,
+      },
+    },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },

@@ -6,6 +6,13 @@ const meta = {
   title: "components/Sonner",
   component: Toaster,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `An opinionated toast component for React. [Docs](https://sonner.emilkowal.ski/).`,
+      },
+    },
+  },
   args: { onClick: fn() },
 } satisfies Meta<typeof Toaster>;
 

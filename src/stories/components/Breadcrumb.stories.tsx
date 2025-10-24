@@ -12,6 +12,13 @@ import {
 const meta = {
   title: "components/Breadcrumb",
   component: Breadcrumb,
+  parameters: {
+    docs: {
+      description: {
+        component: `Displays the path to the current resource using a hierarchy of links.`,
+      },
+    },
+  },
   tags: ["autodocs"],
   args: { onClick: fn() },
 } satisfies Meta<typeof Breadcrumb>;
