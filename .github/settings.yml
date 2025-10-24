@@ -1,6 +1,6 @@
 repository:
-  homepage: https://storybook.kreftforeninge.no
-  description: Storybook for Kreftforeningen. UI components for the Kreftforeningen platform.
+  homepage: "https://storybook.kreftforeninge.no"
+  description: "Storybook for Kreftforeningen. UI components for the Kreftforeningen platform."
   topics:
     - storybook
     - kreftforeningen
